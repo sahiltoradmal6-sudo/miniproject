@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Goal 14: Life below Water</title>
+    <link rel="icon" type="image/x-icon" href="logo14.ico" sizes="16x16">
+    
+    <style>
+        * {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(180deg, #001f3f 0%, #003d5c 50%, #005f7f 100%);
+            color: #e0f4ff;
+        }
+
+        .navbar {
+            font-family: Tahoma, sans-serif;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(0, 31, 63, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid #00a8cc;
+        }
+
+        .navlogo {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .link {
+            color: #66d9ff;
+            padding: 15px 20px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .link:hover {
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        .back {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .content {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .textbg {
+            color: #00ffff;
+            text-align: center;
+            padding-top: 150px;
+            font-size: 90px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px #0088cc, 0 0 40px #00aaff, 0 0 60px #005577;
+        }
+
+        .subtopic {
+            color: #b3e5fc;
+            text-align: center;
+            padding: 20px 40px;
+            font-size: 26px;
+            font-family: 'Times New Roman', serif;
+            max-width: 900px;
+            margin: 0 auto;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .info {
+            min-height: 25vh;
+            padding: 80px 100px;
+            background: linear-gradient(135deg, rgba(0, 61, 92, 0.9), rgba(0, 95, 127, 0.9));
+            color: #e0f4ff;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-size: 19px;
+            line-height: 1.8;
+            margin: 40px 0;
+            border-top: 3px solid #00a8cc;
+            border-bottom: 3px solid #00a8cc;
+            box-shadow: 0 10px 30px rgba(0, 168, 204, 0.3);
+        }
+
+        .heading {
+            text-align: center;
+            padding: 40px 20px 20px;
+            margin-top: 60px;
+        }
+
+        .heading h3 {
+            color: #66d9ff;
+            font-size: 22px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .heading h2 {
+            color: #00ffff;
+            font-size: 32px;
+            text-shadow: 0 0 15px #0088cc;
+        }
+
+        .pages {
+            min-height: 80vh;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #d0ebf5;
+            background: rgba(0, 47, 75, 0.6);
+            margin: 20px 40px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 168, 204, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .pages > div:first-child {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .pages .graf {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pages .graf img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #00a8cc;
+            box-shadow: 0 5px 20px rgba(0, 168, 204, 0.4);
+        }
+
+        .pages b {
+            color: #00ffff;
+            font-size: 20px;
+        }
+
+        .\34 {
+            min-height: 120vh;
+        }
+
+        @media (max-width: 968px) {
+            .pages {
+                flex-direction: column;
+            }
+            
+            .textbg {
+                font-size: 60px;
+                padding-top: 100px;
+            }
+            
+            .info {
+                padding: 50px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted playsinline loop class="back">
+        <source src="videoplayback.mp4" type="video/mp4">
+    </video>
+    
+    <div class="navbar">
+        <div class="navlogo">
+            <img src="SDG14LOGO123.png" alt="Logo" width="100px" height="100px">
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#" class="link">HOME</a>
+                    <a href="#info" class="link">THE SDG 14</a>
+                    <a href="under water ecosystem.html" class="link">Ecosystem</a>
+                    <a href="Marine Species.html" class="link">Marine Diversity</a>
+                    <a href="under water habitats.html" class="link">Ocean Habitats</a>
+                    <a href="overviewecosystem.html" class="link">Ocean Threats</a>
+                    <a href="Conservation.html" class="link"> Conservation</a>
+                    <a href="ocean_resources_site.html" class="link">Resources</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="textbg">Life Below Water</div>
+        <div class="subtopic">
+            Ocean Ecosystem
+            <br>
+            Conserve and sustainably use the oceans, seas and marine resources for sustainable development.
+
+        </div>
+    </div>
+
+    <div class="info">
+        Healthy oceans and seas are essential to our existence. They cover 70 percent of our planet and we rely on them
+        for food, energy and water. Yet, we have managed to do tremendous damage to these precious resources. We must
+        protect them by eliminating pollution and overfishing and immediately start to responsibly manage and protect
+        all marine life around the world.
+        <br><br>
+        The visualizations and data below present the global perspective on where the world stands today and how it has
+        changed over time.
+        <br><br>
+        The 10 targets and 10 indicators for SDG 14. Targets specify the goals and indicators represent the metrics by
+        which the world aims to track whether these targets are achieved. Below we quote the original text of all
+        targets and show the data on the agreed indicators.
+    </div>
+
+    <div class="heading"  id="info">
+        <h3>Target 14.1</h3>
+        <h2>Reduce marine pollution</h2>
+    </div>
+
+    <div class="pages">
+        <div>
+            <b>Marine Pollution Index</b><br><br>
+            Definition of the SDG indicator: Indicator 14.1.1 is the "(a) index of coastal eutrophication; and (b) plastic
+            debris density" in the UN SDG framework.<br><br>
+
+            Target: "Prevent and significantly reduce marine pollution of all kinds, in particular from land-based
+            activities, including marine debris and nutrient pollution" by 2025.<br><br>
+
+            Unlike most SDGs, which are set for the year 2030, this indicator is targeted for 2025.<br><br>
+
+            More research: Further data and research on marine pollution can be found on the Our World in Data topic
+            page on plastic pollution.
+        </div>
+        <div class="graf">
+            <img src="pollutiongraf.png" alt="Pollution Graph">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Target 14.2</h3>
+        <h2>Protect and restore ecosystems</h2>
+    </div>
+
+    <div class="pages">
+        <div>
+            <b>Ecosystem-Based Management</b><br><br>
+            Definition of the SDG indicator: Indicator 14.2.1 is the "number of countries using ecosystem-based
+            approaches to managing marine areas" in the UN SDG framework.<br><br>
+            Countries who have implemented ecosystem-based approaches to managing marine areas are shown in the
+            interactive visualization.<br><br>
+            <b>Target</b>: "Sustainably manage and protect marine and coastal ecosystems to avoid significant adverse
+            impacts, including by strengthening their resilience, and take action for their restoration in order to
+            achieve healthy and productive oceans" by 2020.<br><br>
+            Unlike most SDGs, which are set for the year 2030, this indicator was targeted for 2020.
+        </div>
+        <div class="graf">
+            <img src="ecosystem.png" alt="Ecosystem Graph">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Target 14.3</h3>
+        <h2>Reduce ocean acidification</h2>
+    </div>
+
+    <div class="pages">
+        <div>
+            <b>Ocean pH Levels</b><br><br>
+            Definition of the SDG indicator: Indicator 14.3.1 is the "average marine acidity (pH) measured at agreed
+            suite of representative sampling stations" in the UN SDG framework.<br><br>
+            The interactive visualization reports trends in the mean seawater pH, measured at the Aloha station in
+            Hawaii. A pH of less than 7 means that a substance is acidic, lower values indicate greater acidity.<br><br>
+            Ocean acidification is a consequence of increasing carbon dioxide emissions. Ocean water and carbon dioxide
+            combine to form carbonic acid, as there is more carbon dioxide produced through emissions more gets absorbed
+            by the ocean.<br><br>
+            <b>Target</b>: "Minimize and address the impacts of ocean acidification, including through enhanced scientific
+            cooperation at all levels" by 2030.
+        </div>
+        <div class="graf">
+            <img src="aciddifiction.png" alt="Acidification Graph">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Target 14.4</h3>
+        <h2>Sustainable fishing</h2>
+    </div>
+
+    <div class="pages 4">
+        <div>
+            <b>Fish Stock Sustainability</b><br><br>
+            Definition of the SDG indicator: Indicator 14.4.1 is the "proportion of fish stocks within biologically
+            sustainable levels" in the UN SDG framework.<br><br>
+            Fish stocks are classified as "within biologically sustainable levels" if their abundance is estimated to be
+            equal to or greater than the level that can produce the Maximum Sustainable Yield (MSY). The MSY is the
+            largest long-term average catch that can be taken from a fish stock under prevailing environmental and
+            fishery conditions.<br><br>
+            Fish stocks become overexploited when fish are caught at a rate higher than the population can support and
+            the ability of the stock to produce its MSY is jeopardized.<br><br>
+            <b>Target</b>: "By 2020, effectively regulate harvesting and end overfishing, illegal, unreported and unregulated
+            fishing and destructive fishing practices and implement science-based management plans, in order to restore
+            fish stocks in the shortest time feasible, at least to levels that can produce maximum sustainable yield as
+            determined by their biological characteristics."<br><br>
+            Unlike most SDG targets, which have a target year of 2030, this indicator is set to be achieved by 2020.
+        </div>
+        <div class="graf">
+            <img src="fishstoks.png" alt="Fish Stocks Graph">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Target 14.5</h3>
+        <h2>Conserve coastal and marine areas</h2>
+    </div>
+
+    <div class="pages">
+        <div>
+            <b>Protected Marine Areas</b><br><br>
+            Definition of the SDG indicator: Indicator 14.5.1 is the "coverage of protected areas in relation to marine
+            areas" in the UN SDG framework.<br><br>
+            <b>Target</b>: By 2020 "conserve at least 10 per cent of coastal and marine areas, consistent with national and
+            international law and based on the best available scientific information."<br><br>
+            Unlike most SDG targets, which have a target year of 2030, this indicator was set to be achieved by 2020.
+        </div>
+        <div class="graf">
+            <img src="marine.png" alt="Marine Areas Graph">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Target 14.6</h3>
+        <h2>End subsidies contributing to overfishing</h2>
+    </div>
+
+    <div class="pages">
+        <div>
+            <b>Combat Illegal Fishing</b><br><br>
+            Definition of the SDG indicator: Indicator 14.6.1 is "the degree of implementation of international
+            instruments aiming to combat illegal, unreported and unregulated fishing" in the UN SDG framework.<br><br>
+            Data for this indicator is shown in the interactive visualization.<br><br>
+            <b>Target</b>: "Prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing,
+            eliminate subsidies that contribute to illegal, unreported and unregulated fishing and refrain from
+            introducing new such subsidies" by 2020.<br><br>
+            Unlike most SDGs, which are set for the year 2030, this indicator was targeted for 2020.
+        </div>
+        <div class="graf">
+            <img src="fishing.png" alt="Illegal Fishing Graph">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Target 14.7</h3>
+        <h2>Increase economic benefits from sustainable marine resources</h2>
+    </div>
+
+    <div class="pages">
+        <div>
+            <b>Income from Sustainable Fisheries</b><br><br>
+            Definition of the SDG indicator: Indicator 14.7.1 is "Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries" in the UN SDG framework.<br><br>
+            The value added of marine capture fisheries indicates the prominence of marine fish related activities in the country's economy and its importance for livelihoods. Stocks that are fished at sustainable levels are able to support the communities and industries which rely on them, without compromising reproduction and long-term sustainability.<br><br>
+            <b>Target</b>: By 2030 "increase the economic benefits to small island developing States and least developed countries from the sustainable use of marine resources, including through sustainable management of fisheries, aquaculture and tourism."
+        </div>
+        <div class="graf">
+            <img src="sustainablefisheries.png" alt="Sustainable Fisheries Graph">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Target 14.A</h3>
+        <h2>Increase scientific knowledge and marine technology</h2>
+    </div>
+
+    <div class="pages">
+        <div>
+            <b>Research Resources for Marine Technology</b><br><br>
+            Definition of the SDG indicator: Indicator 14.a.1 is the "proportion of total research budget allocated to research in the field of marine technology" in the UN SDG framework.<br><br>
+            <b>Target</b>: "Increase scientific knowledge, develop research capacity and transfer marine technology, in order to improve ocean health and to enhance the contribution of marine biodiversity to the development of developing countries, in particular small island developing States and least developed countries by 2030."
+        </div>
+        <div class="graf">
+            <img src="ocean-research-funding.png" alt="Ocean Research Funding Graph">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Target 14.B</h3>
+        <h2>Support small scale fishers</h2>
+    </div>
+
+    <div class="pages">
+        <div>
+            <b>Support Small Scale Fishers</b><br><br>
+            Definition of the SDG indicator: Indicator 14.b.1 is the "degree of application of a legal/regulatory/policy/institutional framework which recognizes and protects access rights for small-scale fisheries" in the UN SDG framework.<br><br>
+            <b>Target</b>: "Provide access for small-scale artisanal fishers to marine resources and markets" by 2030.
+        </div>
+        <div class="graf">
+            <img src="protection-of-the-rights-of-small-scale-fisheries.png" alt="Small Scale Fisheries Graph">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Target 14.C</h3>
+        <h2>Implement and enforce international sea law</h2>
+    </div>
+
+    <div class="pages">
+        <div>
+            <b>International Sea Law Implementation</b><br><br>
+            Definition of the SDG indicator: Indicator 14.c.1 is the "number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nations Convention on the Law of the Sea" in the UN SDG framework.<br><br>
+            This indicator is measured as the progress countries have made towards the ratification and accession, as well as implementation of the United Nations Convention on the Law of the Sea (UNCLOS).<br><br>
+            <b>Target</b>: "Enhance the conservation and sustainable use of oceans and their resources by implementing international law as reflected in the United Nations Convention on the Law of the Sea" by 2030.
+        </div>
+        <div class="graf">
+            <img src="ratification-and-accession-to-unclos.png" alt="UNCLOS Graph">
+        </div>
+    </div>
+</body>
+
+</html>
